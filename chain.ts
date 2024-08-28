@@ -10,6 +10,11 @@ function defineChain(chain: Chain): Chain {
   };
 }
 
+1: http('https://eth-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'),
+    137: http('https://polygon-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'),
+    10: http('https://opt-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'),
+    42161: http('https://arb-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'),
+
 // Chain configurations
 
 // Avalanche
@@ -45,7 +50,7 @@ const arbitrum = defineChain({
   name: 'Arbitrum One',
   nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   rpcUrls: {
-    default: { http: ['https://arb1.arbitrum.io/rpc'] },
+    default: { http: ['https://arb-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'] },
   },
   blockExplorers: {
     default: {
@@ -127,7 +132,7 @@ const polygon = defineChain({
   name: 'Polygon',
   nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
   rpcUrls: {
-    default: { http: ['https://polygon-rpc.com'] },
+    default: { http: ['https://polygon-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'] },
   },
   blockExplorers: {
     default: {
@@ -155,7 +160,7 @@ const zksync = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ['https://mainnet.era.zksync.io'],
+      http: ['https://zksync-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'],
       webSocket: ['wss://mainnet.era.zksync.io/ws'],
     },
   },
@@ -261,7 +266,7 @@ const mainnet = defineChain({
   nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   rpcUrls: {
     default: {
-      http: ['https://cloudflare-eth.com'],
+      http: ['https://eth-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'],
     },
   },
   blockExplorers: {
@@ -289,7 +294,7 @@ const optimism = defineChain({
     decimals: 18,
   },
   rpcUrls: {
-    default: { http: ['https://mainnet.optimism.io'] },
+    default: { http: ['https://opt-mainnet.g.alchemy.com/v2/iUoZdhhu265uyKgw-V6FojhyO80OKfmV'] },
   },
   blockExplorers: {
     default: {
