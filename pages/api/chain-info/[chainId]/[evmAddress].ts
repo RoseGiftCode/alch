@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { z } from 'zod';
 
-const ALCHEMY_API_KEY = z.string().parse(process.env.ALCHEMY_API_KEY);
+const ALCHEMY_API_KEY = z.string().parse(process.env.NEXT_PUBLIC_ALCHEMY_API_KEY);
 console.log('WalletConnect Project ID:', process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID);
 
 
